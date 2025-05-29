@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><title>Survey Results</title></head>
+<body>
+    <h2>Survey Results</h2>
+    {% if message %}
+        <p>{{ message }}</p>
+    {% else %}
+        <p>Total Surveys: {{ total }}</p>
+        <p>Average Age: {{ avg_age }}</p>
+        <p>Oldest Participant: {{ oldest }}</p>
+        <p>Youngest Participant: {{ youngest }}</p>
+        <p>Pizza Lovers: {{ pizza_percent }}%</p>
+        <p>Average 'I like to eat out' Rating: {{ eat_out_avg }}</p>
+    {% endif %}
+</body>
+</html>
