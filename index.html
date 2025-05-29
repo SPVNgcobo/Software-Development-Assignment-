@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head><title>Survey</title></head>
+<body>
+    <h2>Survey Form</h2>
+    <form method="POST" action="/submit">
+        <label>Name:</label><input type="text" name="name" required><br>
+        <label>Surname:</label><input type="text" name="surname" required><br>
+        <label>Date:</label><input type="date" name="date" required><br>
+        <label>Age:</label><input type="number" name="age" min="5" max="120" required><br>
+
+        <label>Favourite Food:</label><br>
+        <input type="checkbox" name="food" value="Pizza"> Pizza<br>
+        <input type="checkbox" name="food" value="Pasta"> Pasta<br>
+        <input type="checkbox" name="food" value="Pap and Wors"> Pap and Wors<br>
+        <input type="checkbox" name="food" value="Chicken stir fry"> Chicken stir fry<br>
+        <input type="checkbox" name="food" value="Beef stir fry"> Beef stir fry<br>
+        <input type="checkbox" name="food" value="Other"> Other<br>
+
+        <p>I like to eat out:</p>
+        <input type="radio" name="eat_out" value="1" required>1
+        <input type="radio" name="eat_out" value="2">2
+        <input type="radio" name="eat_out" value="3">3
+        <input type="radio" name="eat_out" value="4">4
+        <input type="radio" name="eat_out" value="5">5
+
+        <p>I like to watch movies:</p>
+        <input type="radio" name="watch_movies" value="1" required>1
+        <input type="radio" name="watch_movies" value="2">2
+        <input type="radio" name="watch_movies" value="3">3
+        <input type="radio" name="watch_movies" value="4">4
+        <input type="radio" name="watch_movies" value="5">5
+
+        <p>I like to watch TV:</p>
+        <input type="radio" name="watch_tv" value="1" required>1
+        <input type="radio" name="watch_tv" value="2">2
+        <input type="radio" name="watch_tv" value="3">3
+        <input type="radio" name="watch_tv" value="4">4
+        <input type="radio" name="watch_tv" value="5">5
+
+        <p>I like to listen to the radio:</p>
+        <input type="radio" name="listen_radio" value="1" required>1
+        <input type="radio" name="listen_radio" value="2">2
+        <input type="radio" name="listen_radio" value="3">3
+        <input type="radio" name="listen_radio" value="4">4
+        <input type="radio" name="listen_radio" value="5">5
+
+        <br><br><input type="submit" value="Submit Survey">
+    </form>
+</body>
+</html>
