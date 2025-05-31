@@ -1,0 +1,155 @@
+/* General Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333333;
+  padding: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border: 2px solid #008080;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #008080;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+nav button {
+  background-color: #008080;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+nav button:hover {
+  background-color: #006666;
+}
+
+/* Form Sections */
+.form-section {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background-color: #f0f8f8;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Checkboxes */
+.checkbox-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: normal;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+table caption {
+  caption-side: top;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #008080;
+  text-align: left;
+}
+
+thead {
+  background-color: #008080;
+  color: white;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+th small {
+  font-weight: normal;
+  display: block;
+  font-size: 0.75em;
+  color: #f0f0f0;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Results Section */
+#resultsScreen {
+  padding-top: 20px;
+}
+
+#resultsScreen h3 {
+  text-align: center;
+  color: #333333;
+  margin-bottom: 15px;
+}
+
+/* Submit Button */
+button {
+  background-color: #FFDAB9;
+  color: #333333;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ffcaa3;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lifestyle Survey</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Lifestyle Survey</h2>
+    <nav>
+      <button onclick="showScreen('survey')">Fill Out Survey</button>
+      <button onclick="showScreen('results')">View Survey Results</button>
+    </nav>
+    <div id="surveyScreen">
+      <div class="form-section">
+        <div class="form-group"><label for="fullname">Full Name:</label><input type="text" id="fullname" /></div>
+        <div class="form-group"><label for="email">Email:</label><input type="text" id="email" /></div>
+        <div class="form-group"><label for="birthDate">Date of Birth:</label><input type="date" id="birthDate" /></div>
+        <div class="form-group"><label for="contact">Contact:</label><input type="number" id="contact" min="5" max="120" /></div>
+      </div>
+      <div class="form-section">
+        <label>Favourite Food:</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" value="Pizza" /> Pizza</label>
+          <label><input type="checkbox" value="Pasta" /> Pasta</label>
+          <label><input type="checkbox" value="Pap and Wors" /> Pap and Wors</label>
+          <label><input type="checkbox" value="Chicken stir fry" /> Chicken stir fry</label>
+          <label><input type="checkbox" value="Other" /> Other</label>
+        </div>
+      </div>
+      <div class="form-section">
+        <label>
+          Please rate your level of agreement on a scale of 1 to 5 with one being strongly agree and five being strongly disagree.
+        </label>
+       <table>
+        <thead>
+        <tr>
+          <th>Question</th>
+          <th>1<br><small>Strongly Agree</small></th>
+          <th>2<br><small>Agree</small></th>
+          <th>3<br><small>Neutral</small></th>
+          <th>4<br><small>Disagree</small></th>
+          <th>5<br><small>Strongly Disagree</small></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Do you like to eat out?</td>
+          <td><input type="radio" name="eatout" value="1" /></td>
+          <td><input type="radio" name="eatout" value="2" /></td>
+          <td><input type="radio" name="eatout" value="3" /></td>
+          <td><input type="radio" name="eatout" value="4" /></td>
+          <td><input type="radio" name="eatout" value="5" /></td>
+        </tr>
+        <tr>
+          <td>Do you watch movies?</td>
+          <td><input type="radio" name="movies" value="1" /></td>
+          <td><input type="radio" name="movies" value="2" /></td>
+          <td><input type="radio" name="movies" value="3" /></td>
+          <td><input type="radio" name="movies" value="4" /></td>
+          <td><input type="radio" name="movies" value="5" /></td>
+        </tr>
+        <tr>
+          <td>Do you like to watch TV?</td>
+          <td><input type="radio" name="tv" value="1" /></td>
+          <td><input type="radio" name="tv" value="2" /></td>
+          <td><input type="radio" name="tv" value="3" /></td>
+          <td><input type="radio" name="tv" value="4" /></td>
+          <td><input type="radio" name="tv" value="5" /></td>
+        </tr>
+        <tr>
+          <td>Do you listen to the radio?</td>
+          <td><input type="radio" name="radio" value="1" /></td>
+          <td><input type="radio" name="radio" value="2" /></td>
+          <td><input type="radio" name="radio" value="3" /></td>
+          <td><input type="radio" name="radio" value="4" /></td>
+          <td><input type="radio" name="radio" value="5" /></td>
+        </tr>
+      </tbody>
+      </table>
+      </div>
+      <div class="form-group"><button onclick="submitSurvey()">Submit</button></div>
+    </div>
+  </div>
+  <div id="resultsScreen" style="display: none;">
+    <h3>Survey Results Summary</h3>
+    <table>
+      <caption>Please rate your level of agreement on a scale of 1 to 5 with one being strongly agree and five being strongly disagree.</caption>
+      <tbody>
+        <tr><td>Total Surveys Completed:</td><td id="totalSurveys"></td></tr>
+        <tr><td>Average Age:</td><td id="averageAge"></td></tr>
+        <tr><td>Oldest Participant:</td><td id="oldestAge"></td></tr>
+        <tr><td>Youngest Participant:</td><td id="youngestAge"></td></tr>
+        <tr><td>Percentage Who Like Pizza:</td><td id="pizzaPercentage"></td></tr>
+        <tr><td>Average Rating for "Eat Out":</td><td id="eatOutAvg"></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
